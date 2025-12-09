@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-right">
+            <a href="login.html"><img src="login.png.png" class="icon"></a>
+            <a href="cart.html"><img src="shop.png.png" class="icon"></a>
+        </div>
+    </div>
+
+    <main class="cart-container">
+        <div class="cart-box">
+            <h1>Keranjang Belanja</h1>
+            <hr>
+
+            <div id="cartItems"></div>
+
+            <p class="total">Total: <span id="totalHarga">Rp 0</span></p>
+
+            <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

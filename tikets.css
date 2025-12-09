@@ -1,0 +1,91 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    background: #d60000;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo { width: 50px; }
+
+.brand {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover { opacity: 0.7; }
+
+.icon {
+    width: 28px;
+    margin-left: 20px;
+}
+
+/* CONTENT */
+.ticket-container {
+    width: 85%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.ticket-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.ticket-desc {
+    margin: 10px 0 15px;
+}
+
+.ticket-event {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.ticket-price {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #d60000;
+}
+
+.btn-buy {
+    padding: 12px 25px;
+    background: #d60000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: #a80000;
+}

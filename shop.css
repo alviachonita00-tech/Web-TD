@@ -1,0 +1,155 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
+
+/* NAVBAR */
+.header {
+    width: 100%;
+    background: #d60000;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header-left { display: flex; align-items: center; }
+
+.logo { width: 55px; }
+
+.brand {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover { text-decoration: underline; }
+
+.icon { width: 28px; margin-left: 20px; cursor: pointer; }
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* TICKET CARDS */
+.ticket-card {
+    width: 85%;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    border-top: 5px solid #d60000;
+}
+
+.ticket-card.premium { border-top: 5px solid gold; }
+
+.ticket-card h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #d60000;
+}
+
+.desc { margin-bottom: 10px; }
+
+.info li { margin: 8px 0; }
+
+/* BUTTON */
+.buy-btn {
+    padding: 12px 25px;
+    background: #d60000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.vip {
+    background: gold;
+    color: black;
+}
+
+/* CART PANEL */
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+    padding: 25px;
+    transition: .4s;
+    z-index: 9999;
+}
+
+.cart-panel.open { right: 0; }
+
+/* POPUP SHOP SAFE */
+.popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 9000;
+}
+
+.popup-box {
+    width: 60%;
+    max-width: 700px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 9990;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.popup-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#closePopup {
+    font-size: 28px;
+    cursor: pointer;
+}

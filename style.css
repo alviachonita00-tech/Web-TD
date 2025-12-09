@@ -1,0 +1,101 @@
+/* ==== GLOBAL ==== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* agar konten tidak tertutup navbar */
+    padding-top: 80px;
+}
+
+/* ==== HEADER ==== */
+.header {
+    background: #d40000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: white;
+
+    /* FIX NAVBAR TERTUTUP HERO */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-menu a:hover {
+    opacity: .8;
+}
+
+.header-right img {
+    width: 28px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* INI YANG PENTING */
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ==== TITLE SECTION ==== */
+.title-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==== SLIDER ==== */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.slide-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Membebaskan klik pada hero supaya ikon bisa diklik */
+.hero {
+    pointer-events: none;
+}

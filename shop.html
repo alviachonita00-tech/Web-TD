@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Tickets Shop</title>
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+    <div class="header-left">
+        <img src="f1.png.png" class="logo">
+        <span class="brand">Tickets</span>
+    </div>
+
+    <nav class="nav-menu">
+        <a href="Calender.html">F1 Calendar</a>
+        <a href="FAQs.html">FAQs</a>
+        <a href="#" id="shopSafeBtn">Shop Safe</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="header-right">
+    <a href="login.html"><img src="login.png.png" class="icon"></a>
+    <a href="cart.html"><img src="shop.png.png" class="icon" id="cartIcon"></a>
+</div>
+</header>
+
+<!-- POPUP SHOP SAFE -->
+<div class="popup-overlay" id="popupOverlay"></div>
+
+<div class="popup-box" id="popupBox">
+    <div class="popup-header">
+        <h2>Shop Safe</h2>
+        <span id="closePopup">&times;</span>
+    </div>
+
+    <div class="popup-content">
+        <p>
+            Genuine tickets and hospitality packages are available from the 
+            <a href="https://formula1.com">Formula1.com</a> website.
+            Beware of fraudulent websites, suspicious e-mails, SMS and scams.
+        </p>
+
+        <p>
+            Read our <a href="FAQs.html">FAQs</a> for more information about ticket security.
+        </p>
+
+        <img src="shop.png.png" class="popup-img">
+    </div>
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+    <img src="ferrari.png">
+</div>
+
+<h1 class="title">F1 Tickets – Choose Your Experience</h1>
+
+<!-- ===== Ticket Cards ===== -->
+
+<div class="ticket-card">
+    <h2>General Admission (GA)</h2>
+    <p class="desc">Akses ke area terbuka tanpa kursi bernomor.</p>
+    <ul class="info">
+        <li><strong>Tanggal Event:</strong> 3 – 5 Mei 2025</li>
+        <li><strong>Area Kursi:</strong> Tidak ada kursi</li>
+        <li><strong>Fasilitas:</strong> Food stalls, toilet umum</li>
+        <li><strong>Harga:</strong> <span class="price">Rp 5.000.000</span></li>
+    </ul>
+    <button class="buy-btn" data-name="GA Ticket" data-price="5000000">Beli Sekarang</button>
+</div>
+
+<div class="ticket-card">
+    <h2>Grandstand (Tribun)</h2>
+    <p class="desc">Kursi bernomor dengan view terbaik.</p>
+
+    <ul class="info">
+        <li>📌 North Grandstand – Rp 8.000.000</li>
+        <li>📌 South Grandstand – Rp 12.500.000</li>
+        <li>📌 Start/Finish Grandstand – Rp 20.000.000</li>
+    </ul>
+
+    <button class="buy-btn" data-name="Grandstand" data-price="8000000">Pilih Paket</button>
+</div>
+
+<div class="ticket-card">
+    <h2>VIP Hospitality Lounge</h2>
+    <p class="desc">Akses lounge mewah, makanan gourmet & AC.</p>
+
+    <ul class="info">
+        <li>✨ Premium Lounge – Rp 22.000.000</li>
+        <li>✨ Super Hospitality Deck – Rp 40.000.000</li>
+    </ul>
+
+    <button class="buy-btn" data-name="VIP Hospitality" data-price="22000000">Pilih Paket</button>
+</div>
+
+<div class="ticket-card premium">
+    <h2>Paddock Club (Ultimate VIP)</h2>
+    <p class="desc">Area paling eksklusif F1 di atas pit lane.</p>
+
+    <ul class="info">
+        <li>🔥 Paddock Club 2-Day – Rp 90.000.000</li>
+        <li>🔥 Paddock Club 3-Day – Rp 150.000.000</li>
+    </ul>
+
+    <button class="buy-btn vip" data-name="Paddock Club" data-price="90000000">Beli VIP</button>
+</div>
+
+<!-- CART PANEL -->
+<div class="cart-panel" id="cartPanel">
+    <h2>Keranjang Belanja</h2>
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+        <h3>Total: <span id="cartTotal">Rp 0</span></h3>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<script src="shop.js"></script>
+</body>
+</html>
